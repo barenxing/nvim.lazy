@@ -36,6 +36,16 @@ brew install rust
 brew install golang
 ```
 
+## Enable LazyVim Extras
+
+```text
+lang.json
+lang.markdown
+lang.toml
+```
+```
+```
+
 ## install my plugins
 
 - [x] oil.lua
