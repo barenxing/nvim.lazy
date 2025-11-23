@@ -44,6 +44,20 @@ lang.markdown
 lang.toml
 ```
 
+## Disable Dashboard
+
+The LazyVim documentation is a bit old.  Here is how to disable Dashboard
+
+```lua
+-- lua/plugins/dashboard.lua
+return {
+  {
+    "folke/snacks.vim",
+    opts = { dashboard = { enabled = false } },
+  },
+}
+```
+
 ## install my plugins
 
 - [x] oil.lua
