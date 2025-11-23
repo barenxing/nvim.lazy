@@ -43,8 +43,6 @@ lang.json
 lang.markdown
 lang.toml
 ```
-```
-```
 
 ## install my plugins
 
