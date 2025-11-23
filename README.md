@@ -2,3 +2,40 @@
 
 A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
 Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+
+## Fix .gitignore for macOS
+
+Add the following two lines to the .gitignore for macOS
+
+```text
+.DS_Store
+**/.DS_Store
+```
+
+## My modification after starting nvim
+
+Run LazyHealth command to check health and install missing packages via homebrew
+
+Here is the list that I installed.
+
+```shell
+brew install zoxide
+brew install fzf
+brew install git
+brew install lazygit
+brew install fd-find
+brew install curl
+brew install ripgrep
+brew install tree-sitter-cli
+brew install luarocks
+brew install ast-grep
+brew install fish
+brew install fd
+brew install wget
+brew install rust
+brew install golang
+```
+
+## install my plugins
+
+- [x] oil.lua
