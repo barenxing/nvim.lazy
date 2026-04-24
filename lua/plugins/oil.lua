@@ -1,7 +1,9 @@
 -- stevearc/oil.nvim
 -- file explorer that lets you edit your filesystem like a normal Neovim buffer
 --
--- if true then return {} end
+-- if true then
+--   return {}
+-- end
 --
 return {
   "stevearc/oil.nvim",
