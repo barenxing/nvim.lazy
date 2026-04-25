@@ -31,7 +31,7 @@ ls.add_snippets("python", {
       "from sklearn.preprocessing import StandardScaler",
       "",
       "# Load data",
-      " df = pd.read_csv('data.csv', delimiter=',')",
+      "df = pd.read_csv('data.csv', delimiter=',')",
       "",
       "#",
       "# Explore data",
