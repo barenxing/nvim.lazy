@@ -94,7 +94,7 @@ ls.add_snippets("python", {
       "fig, ax = plt.subplots()",
       "",
       "# Plot data",
-      "ax.scatter(X, y, Color='red')",
+      "ax.scatter(X, y, color='red')",
       "ax.plot(X, regressor.predict(X), color='blue')",
       "",
       "# Set labels and title",
