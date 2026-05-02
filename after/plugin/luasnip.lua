@@ -102,7 +102,7 @@ ls.add_snippets("python", {
       "ax.set_xlabel('X-axis_label')",
       "ax.set_ylabel('Y-axis_label')",
       "",
-      " Show grid, optional",
+      "# Show grid, optional",
       "ax.grid()",
       "",
       "# Display the plot",
