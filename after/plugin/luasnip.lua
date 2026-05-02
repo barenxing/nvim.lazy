@@ -39,7 +39,7 @@ ls.add_snippets("python", {
       "",
       "",
       "# Load data",
-      "df = pd.read_csv('data.csv', delimiter=',')",
+      "df = pd.read_csv('Data.csv', delimiter=',')",
       "print(df.head(5))",
       "",
       "",
@@ -74,7 +74,7 @@ ls.add_snippets("python", {
   s("one_hot_encoder", {
     t({
       "from sklearn.compose import ColumnTransformer",
-      "from sklearn.preprocessing import OneHotEncoder, LabelEncoder",
+      "from sklearn.preprocessing import OneHotEncoder",
       "",
       "# Identify categorical features",
       "categorical_features = ['feature1', 'feature2']  # Replace with your actual categorical feature names",
@@ -86,8 +86,48 @@ ls.add_snippets("python", {
       "X = np.array(ct.fit_transform(X))",
       "",
       "# Use LabelEncoder to encode binary categorical data",
+      "from sklearn.preprocessing import LabelEncoder",
       "le = LabelEncoder()",
       "y = le.fit_transform(y)",
+    }),
+  }),
+  s("missing_data", {
+    t({
+      "from sklearn.impute import SimpleImputer",
+      "",
+      "# Create an instance of SimpleImputer with the desired strategy (e.g., mean, median, most_frequent)",
+      "imputer = SimpleImputer(missing_values=np.nan, strategy='mean')",
+      "",
+      "# Fit the imputer to the data and transform it",
+      "X = imputer.fit_transform(X)",
+    }),
+  }),
+  s("split_train_test", {
+    t({
+      "from sklearn.model_selection import train_test_split",
+      "",
+      "# Split the dataset into training and testing sets",
+      "(X_train, X_test, y_train, y_test) = train_test_split(X, y, test_size=0.2, random_state=0)",
+    }),
+  }),
+  s("feature_scaling", {
+    t({
+      "from sklearn.preprocessing import StandardScaler",
+      "",
+      "# Create an instance of StandardScaler",
+      "sc = StandardScaler()",
+      "",
+      "# Fit the scaler to the training data and transform both the training and testing data",
+      "X_train_scaled = sc.fit_transform(X_train)",
+      "X_test_scaled = sc.transform(X_test)",
+    }),
+  }),
+  s("count_nan", {
+    t({
+      "# Count the number of NaN values in each column (works for mixed types)",
+      "nan_counts = df.isna().sum()",
+      "print('\nNumber of NaN values in each column:')",
+      "print(nan_counts)",
     }),
   }),
   s("piplot1", {
