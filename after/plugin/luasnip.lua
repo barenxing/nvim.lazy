@@ -40,7 +40,7 @@ ls.add_snippets("python", {
       "",
       "# Load data",
       "df = pd.read_csv('Data.csv', delimiter=',')",
-      "print('\nFirst 5 rows of the dataset:')",
+      "print('\\nFirst 5 rows of the dataset:')",
       "print(df.head(5))",
       "",
       "",
